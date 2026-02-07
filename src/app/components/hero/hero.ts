@@ -1,9 +1,27 @@
 import { Component } from '@angular/core';
+import { DESTINATIONS } from '../../data/destinations';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
   templateUrl: './hero.html',
-  styleUrl: './hero.css',
+  styleUrls: ['./hero.css']
 })
-export class HeroComponent {}
+export class HeroComponent {
+
+  destinations = DESTINATIONS;
+  currentIndex = 0;
+
+  get currentDestination() {
+    return this.destinations[this.currentIndex];
+  }
+
+  next() {
+    this.currentIndex =
+      (this.currentIndex + 1) % this.destinations.length;
+  }
+
+  prev() {
+    this.currentIndex =
+      (this.currentIndex - 1 + this.destinations.length) % this.destinations.length;
+  }
+}

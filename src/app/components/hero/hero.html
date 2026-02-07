@@ -5,3 +5,29 @@
   </p>
   <button>Explore →</button>
 </section>
+<div
+  class="hero"
+  [style.backgroundImage]="'url(' + currentDestination.backgroundImage + ')'"
+>
+  <div class="overlay">
+
+    <h1>{{ currentDestination.name }}</h1>
+    <p>{{ currentDestination.description }}</p>
+
+    <button class="explore">Explore</button>
+
+    <div class="cards">
+      <div class="card" *ngFor="let card of currentDestination.cards">
+        <img [src]="card.image" />
+        <h3>{{ card.title }}</h3>
+        <p>⭐ {{ card.rating }}</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button (click)="prev()">⬅</button>
+      <button (click)="next()">➡</button>
+    </div>
+
+  </div>
+</div>
