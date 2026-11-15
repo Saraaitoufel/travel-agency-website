@@ -1,59 +1,177 @@
-# AgenceDeVoyage
+# ✈️ Travel Agency Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
+A modern travel agency website built with **Angular and TypeScript**, designed to showcase beautiful travel destinations and tourist attractions.
 
-## Development server
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-24-339933?logo=nodedotjs&logoColor=white" />
+</p>
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## 🌍 Overview
+
+The Travel Agency Website is a web application developed to present attractive travel destinations through an interactive and visually engaging interface.
+
+Visitors can explore different countries, discover tourist attractions, view destination images and navigate between destinations.
+
+The current application showcases destinations such as **Indonesia and Thailand**.
+
+## ✨ Features
+
+- **Destination Showcase:** Explore different countries and tourist destinations.
+- **Interactive Navigation:** Move between destinations using previous and next controls.
+- **Destination Cards:** Display tourist attractions with images and ratings.
+- **Dynamic Content:** Update destination information when navigating.
+- **Modern Interface:** A visual layout designed for travel inspiration.
+- **Reusable Components:** Modular Angular components for better code organization.
+
+## 🖥️ Application Preview
+
+Add your application screenshots here.
+
+```text
+docs/
+  screenshots/
+    home.png
+    destinations.png
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once you add the screenshots, you can display them using:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```markdown
+![Home Page](docs/screenshots/home.png)
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Technologies Used
 
-```bash
-ng generate --help
+| Technology | Purpose |
+|---|---|
+| Angular 21 | Frontend framework |
+| TypeScript | Application logic |
+| HTML5 | Page structure |
+| CSS3 | Styling and layout |
+| Node.js | Development environment |
+| npm | Dependency management |
+
+## 🏗️ Project Architecture
+
+The project follows a component-based Angular architecture.
+
+```text
+src/
+├── app/
+│   ├── components/
+│   │   ├── navbar/
+│   │   ├── hero/
+│   │   └── destination-card/
+│   │
+│   ├── data/
+│   │   └── destinations.ts
+│   │
+│   ├── models/
+│   │   └── destination.model.ts
+│   │
+│   └── pages/
+│       └── home/
+│
+├── assets/
+│   └── images/
+│
+├── index.html
+└── styles.css
 ```
 
-## Building
+### Main Components
 
-To build the project run:
+- **NavbarComponent:** Displays the navigation bar.
+- **HeroComponent:** Presents the selected destination and handles destination navigation.
+- **DestinationCardComponent:** Displays destination images and titles.
+- **HomeComponent:** Combines the main components to build the homepage.
 
-```bash
-ng build
-```
+## ⚙️ Installation and Setup
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Prerequisites
 
-## Running unit tests
+Make sure you have installed:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- Node.js (compatible with Angular 21)
+- npm
+- Visual Studio Code
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 1. Clone the repository
 
 ```bash
-ng e2e
+git clone https://github.com/YOUR_USERNAME/travel-agency-website.git
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 2. Navigate to the project folder
 
-## Additional Resources
+```bash
+cd travel-agency-website
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm start
+```
+
+### 5. Open the application
+
+Navigate to:
+
+```text
+http://localhost:4200/
+```
+
+The application automatically reloads when source files are modified.
+
+## 🏗️ Build
+
+To generate a production build:
+
+```bash
+npm run build
+```
+
+## 🧪 Testing
+
+To run the project's tests:
+
+```bash
+npm test
+```
+
+## 🚀 Future Improvements
+
+Potential features planned for future versions:
+
+- Destination search and filtering.
+- Detailed destination pages.
+- Hotel and flight information.
+- User authentication.
+- Online booking functionality.
+- Responsive design improvements.
+- Integration with travel APIs.
+
+## 👩‍💻 Author
+
+**Sara Aitoufel**
+
+GitHub: [@Saraaitoufel](https://github.com/Saraaitoufel)
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository and follow its development.
+
+**Built with Angular and TypeScript.**
